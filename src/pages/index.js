@@ -124,7 +124,7 @@ const IndexPage = () => {
 
                     <div>
                         <StyledParagraph>
-                            We’re a new creative labs founded at The Harvard Advocate, and we’d love to work with you.
+                            We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
                         </StyledParagraph>
 
                         <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
