@@ -5,8 +5,7 @@ import "@fontsource/inter/600.css"
 import "@fontsource/inter/400.css"
 import "@fontsource/inter/200.css"
 import "@fontsource/ibm-plex-mono"
-import gradient1 from '../images/gradient1.webm'
-import gradient2 from '../images/gradient2.webm'
+import gradient1 from '../images/gradient.mp4'
 
 const StyledDiv = styled.div`
   position: absolute;
@@ -62,10 +61,13 @@ const StyledLink = styled.a`
   font-weight: 600;
   font-family: inter;
   text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 
   &:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
+    color: #FFEA7C;
   }
 `
 const horizontalAnimation = keyframes`
@@ -126,7 +128,7 @@ const IndexPage = () => {
                         </StyledParagraph>
 
                         <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
-                            START A PROJECT WITH US
+                            START A PROJECT
                         </StyledLink>
 
                         {/*<HorizontalScrollText>*/}
@@ -140,7 +142,7 @@ const IndexPage = () => {
             </StyledDiv>
 
             <StyledVideo preload="auto" autoPlay muted loop>
-                <source src={gradient1} type="video/webm"/>
+                <source src={gradient1} type="video/mp4"/>
             </StyledVideo>
         </div>
 
