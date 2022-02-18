@@ -15,7 +15,21 @@ const StyledDiv = styled.div`
   //padding-left: 150px;
   width: 100vw;
   height: 100vh;
+  // padding: 30px
 `
+
+const ResponsiveDiv = styled.div`
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-right: 30px;
+  padding-left: 30px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+`
+
 const StyledHeading1 = styled.h1`
   //position: relative;
   //margin-top: 0;
@@ -32,6 +46,7 @@ const StyledHeading1 = styled.h1`
 const StyledParagraph = styled.p`
   margin-top: 0;
   max-width: 450px;
+  // max-width 80vw
   color: white;
   font-size: 25px;
   font-weight: 200;
@@ -40,11 +55,13 @@ const StyledParagraph = styled.p`
 `
 
 const StyledVideo = styled.video`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  position: relative;
+  position: absolute;
+  padding: 0;
+  margin: 0;
 
 `
 
@@ -92,59 +109,72 @@ const HorizontalScrollText = styled.h2`
 
 const Footer = styled.h3`
   position: absolute;
-  bottom: 5px;
+  bottom: 20px;
   color: white;
+  max-width: 100vw;
   font-size: 20px;
   font-weight: 400;
   font-family: inter;
+  padding-left: 40px;
+  padding-right: 40px;
   //font-family: "IBM Plex Mono";
+  @media (max-width: 900px) {
+    display: none;
+  }
 `
 
 // markup
 const IndexPage = () => {
-    return (<div>
-            <style jsx global>{`
-              body {
-                margin: 0px;
-                padding: 0px;
-              }
-            `}</style>
+    return (
+    <div style={{height:'100%', width:'100%'}}>
+        <style jsx global>{`
+          body {
+            margin: 0px;
+            padding: 0px;
+          }
+        `}</style>
 
-            <StyledDiv>
-                <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
-                    <StyledHeading1>
-                        ADVOCATE
-                        <br/>
-                        EXPERIMENTAL
-                        <br/>
-                        LABS
-                    </StyledHeading1>
+        <StyledDiv>
+            <ResponsiveDiv>
+                <StyledHeading1>
+                    ADVOCATE
+                    <br/>
+                    EXPERIMENTAL
+                    <br/>
+                    LABS
+                </StyledHeading1>
 
-                    <div style={{width: 100}}/>
+                <div style={{width: 100}}/>
 
-                    <div>
-                        <StyledParagraph>
-                            We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
-                        </StyledParagraph>
+                <div>
+                    <StyledParagraph>
+                        We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
+                    </StyledParagraph>
+                    <StyledParagraph>
+                        Interest meeting in 21 South Street on Saturday, February 26 at 3:30pm. RSVP here.
+                    </StyledParagraph>
 
-                        <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
-                            START A PROJECT
-                        </StyledLink>
+                    {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
+                        START A PROJECT
+                    </StyledLink> */}
+                    <StyledLink href="https://forms.gle/g9ZAkyuLkQpegSuF9" target="_blank" rel="noreferrer noopener">
+                        RSVP Here.
+                    </StyledLink>
 
-                        {/*<HorizontalScrollText>*/}
-                        {/*    Augmented Reality | NFTs | Experimental Performance Spaces | Art Residency Program | Haunted Houses | Flea Markets | Third Wave Coffee | Botany  |*/}
-                        {/*</HorizontalScrollText>*/}
-                    </div>
-
+                    {/*<HorizontalScrollText>*/}
+                    {/*    Augmented Reality | NFTs | Experimental Performance Spaces | Art Residency Program | Haunted Houses | Flea Markets | Third Wave Coffee | Botany  |*/}
+                    {/*</HorizontalScrollText>*/}
                 </div>
 
-                <Footer>21 SOUTH ST CAMBRIDGE, MA 02138 | COPYRIGHT © THE HARVARD ADVOCATE 2022</Footer>
-            </StyledDiv>
+            </ResponsiveDiv>
 
-            <StyledVideo preload="auto" autoPlay muted loop>
-                <source src={gradient1} type="video/mp4"/>
-            </StyledVideo>
-        </div>
+            <Footer>21 SOUTH ST CAMBRIDGE, MA 02138 | COPYRIGHT © THE HARVARD ADVOCATE 2022</Footer>
+        </StyledDiv>
+
+        <StyledVideo preload="auto" autoPlay muted loop>
+            <source src={gradient1} type="video/mp4"/>
+        </StyledVideo>
+       </div>
 
     )
 }
