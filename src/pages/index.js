@@ -41,6 +41,13 @@ const StyledHeading1 = styled.h1`
   font-size: 45px;
   font-weight: 400;
   font-family: inter;
+
+  @media (max-width: 700px) {
+    font-size: 40px;
+   }
+   @media (max-width: 500px) {
+    font-size: 37px;
+   }
 `
 
 const StyledParagraph = styled.p`
@@ -52,6 +59,9 @@ const StyledParagraph = styled.p`
   font-weight: 200;
   font-family: inter;
 
+  @media (max-width: 700px) {
+   font-size: 20px;
+  }
 `
 
 const StyledVideo = styled.video`
@@ -86,6 +96,10 @@ const StyledLink = styled.a`
     text-underline-offset: 3px;
     color: #FFEA7C;
   }
+
+  @media (max-width: 700px) {
+    font-size: 18px;
+   }
 `
 const horizontalAnimation = keyframes`
   0% {
