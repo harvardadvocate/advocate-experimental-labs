@@ -164,6 +164,10 @@ const IndexPage = () => {
                     <StyledParagraph>
                         We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
                     </StyledParagraph>
+
+                    <StyledParagraph>
+                        Applications for our Spring 2022 cohort are now open. 
+                    </StyledParagraph>
                     <StyledParagraph>
                         Interest meeting in 21 South Street on Saturday, February 26 at 3:30pm. RSVP here.
                     </StyledParagraph>
@@ -171,9 +175,17 @@ const IndexPage = () => {
                     {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
                         START A PROJECT
                     </StyledLink> */}
-                    <StyledLink href="https://forms.gle/g9ZAkyuLkQpegSuF9" target="_blank" rel="noreferrer noopener">
-                        RSVP Here.
+                    <div style={{display: 'flex', flexDirection: 'row'}}>
+
+                      <StyledLink href="https://forms.gle/eXRmpvHnFdWMnvtH6" target="_blank" rel="noreferrer noopener">
+                          Apply here.
+                      </StyledLink>
+                      <div style={{padding: "10px"}}/>
+                      <StyledLink href="https://forms.gle/g9ZAkyuLkQpegSuF9" target="_blank" rel="noreferrer noopener">
+                        RSVP.
                     </StyledLink>
+                    </div>
+
 
                     {/*<HorizontalScrollText>*/}
                     {/*    Augmented Reality | NFTs | Experimental Performance Spaces | Art Residency Program | Haunted Houses | Flea Markets | Third Wave Coffee | Botany  |*/}
