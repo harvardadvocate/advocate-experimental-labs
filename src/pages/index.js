@@ -166,10 +166,7 @@ const IndexPage = () => {
                     </StyledParagraph>
 
                     <StyledParagraph>
-                        Applications for our Spring 2022 cohort are now open. 
-                    </StyledParagraph>
-                    <StyledParagraph>
-                        Interest meeting in 21 South Street on Saturday, February 26 at 3:30pm. RSVP here.
+                        Applications for our Fall 2022 cohort coming soon. Contact us at labs@theharvardadvocate.com.
                     </StyledParagraph>
 
                     {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
@@ -177,12 +174,12 @@ const IndexPage = () => {
                     </StyledLink> */}
                     <div style={{display: 'flex', flexDirection: 'row'}}>
 
-                      <StyledLink href="https://forms.gle/eXRmpvHnFdWMnvtH6" target="_blank" rel="noreferrer noopener">
-                          Apply here.
+                      {/* <StyledLink href="https://forms.gle/eXRmpvHnFdWMnvtH6" target="_blank" rel="noreferrer noopener">
+                          Apply Here.
                       </StyledLink>
-                      <div style={{padding: "10px"}}/>
-                      <StyledLink href="https://forms.gle/g9ZAkyuLkQpegSuF9" target="_blank" rel="noreferrer noopener">
-                        RSVP.
+                      <div style={{padding: "10px"}}/> */}
+                      <StyledLink href="mailto:labs@theharvardadvocate.com">
+                        Email us.
                     </StyledLink>
                     </div>
 
@@ -197,7 +194,7 @@ const IndexPage = () => {
             <Footer>21 SOUTH ST CAMBRIDGE, MA 02138 | COPYRIGHT © THE HARVARD ADVOCATE 2022</Footer>
         </StyledDiv>
 
-        <StyledVideo preload="auto" autoPlay muted loop>
+        <StyledVideo preload="auto" autoPlay autoplay muted loop>
             <source src={gradient1} type="video/mp4"/>
         </StyledVideo>
        </div>
