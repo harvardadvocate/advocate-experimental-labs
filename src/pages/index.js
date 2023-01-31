@@ -166,7 +166,7 @@ const IndexPage = () => {
                     </StyledParagraph>
 
                     <StyledParagraph>
-                        Applications for our Fall 2022 cohort coming soon. Contact us at labs@theharvardadvocate.com.
+                        More info coming soon. Contact us at labs@theharvardadvocate.com.
                     </StyledParagraph>
 
                     {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
