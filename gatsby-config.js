@@ -3,6 +3,7 @@ module.exports = {
         siteUrl: `https://labs.theharvardadvocate.com`,
     },
     plugins: [
+        `gatsby-plugin-styled-components`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
