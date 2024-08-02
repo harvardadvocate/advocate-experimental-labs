@@ -164,14 +164,9 @@ const IndexPage = () => {
                     <StyledParagraph>
                         We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
                     </StyledParagraph>
-                    <br></br>
-
-                    <StyledLink href="/projects">
-                        See our projects here.
-                    </StyledLink>
 
                     <StyledParagraph>
-                        {/* More info coming soon. Contact us at labs@theharvardadvocate.com. */}
+                        More info coming soon. Contact us at labs@theharvardadvocate.com.
                     </StyledParagraph>
 
                     {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
@@ -184,9 +179,8 @@ const IndexPage = () => {
                       </StyledLink>
                       <div style={{padding: "10px"}}/> */}
                       <StyledLink href="mailto:labs@theharvardadvocate.com">
-                        {/* Email us. */}
+                        Email us.
                     </StyledLink>
-
                     </div>
 
 
@@ -196,6 +190,7 @@ const IndexPage = () => {
                 </div>
 
             </ResponsiveDiv>
+
             <Footer>21 SOUTH ST CAMBRIDGE, MA 02138 | COPYRIGHT © THE HARVARD ADVOCATE 2022</Footer>
         </StyledDiv>
 
