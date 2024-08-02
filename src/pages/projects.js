@@ -7,45 +7,85 @@ import "@fontsource/inter/200.css"
 import "@fontsource/ibm-plex-mono"
 import gradient1 from '../images/gradient.mp4'
 
+
+
+const Center = styled.div`
+  // align-items: center;
+  // justify-content: center;
+
+`
 const StyledDiv = styled.div`
   position: absolute;
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
   //padding-left: 150px;
   width: 100vw;
-  height: 100vh;
-  // padding: 30px
+  height: 40vh;
 `
 
 const ResponsiveDiv = styled.div`
-
+  margin-top:50vh; 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding-right: 30px;
   padding-left: 30px;
-  @media (max-width: 900px) {
+  @media (max-width: 200px) {
     flex-direction: column;
   }
 `
 
-const StyledHeading1 = styled.h1`
-  //position: relative;
+const StyledTitle = styled.h1`
+  position: absolute;
   //margin-top: 0;
   //margin-bottom: 64px;
   //margin: auto;
-  margin-top: 0;
+  margin-top: 0px;
+  // max-width: 320px;
+  color: white;
+  font-size: 90px;
+  font-weight: 400;
+  font-family: inter;
+
+  @media (max-width: 200px) {
+    font-size: 40px;
+   }
+   @media (max-width: 100px) {
+    font-size: 37px;
+   }
+`
+
+const StyledHeading1 = styled.h1`
+  position: relative;
+  //margin-top: 0;
+  //margin-bottom: 64px;
+  //margin: auto;
+  margin-top: 0px;
   max-width: 320px;
   color: white;
   font-size: 45px;
   font-weight: 400;
   font-family: inter;
 
-  @media (max-width: 700px) {
+  @media (max-width: 200px) {
     font-size: 40px;
    }
-   @media (max-width: 500px) {
+   @media (max-width: 100px) {
+    font-size: 37px;
+   }
+`
+
+const StyledImage = styled.img`
+
+  // max-width: 50px;
+  width: 200px;
+
+
+  @media (max-width: 50px) {
+    font-size: 40px;
+   }
+   @media (max-width: 50px) {
     font-size: 37px;
    }
 `
@@ -62,7 +102,25 @@ const StyledParagraph = styled.p`
   @media (max-width: 700px) {
    font-size: 20px;
   }
+
+  
 `
+
+
+const StyledParagraph2 = styled.p`
+  margin-top: 0;
+  max-width: 450px;
+  // max-width 80vw
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: inter;
+
+  @media (max-width: 700px) {
+   font-size: 12px;
+  }
+
+  `
 
 const StyledVideo = styled.video`
   width: 100vw;
@@ -84,10 +142,10 @@ const StyledLink = styled.a`
   border-radius: 500px;
   border: none;
   color: white;
-  font-size: 20px;
+  // font-size: 20px;
   font-weight: 600;
   font-family: inter;
-  text-decoration: none;
+  // text-decoration: none;
   text-decoration: underline;
   text-underline-offset: 3px;
 
@@ -123,7 +181,10 @@ const HorizontalScrollText = styled.h2`
 
 const Footer = styled.h3`
   position: absolute;
-  bottom: 20px;
+  // margin-top: 400px;
+  align-items: center;
+
+  bottom: -55vh;
   color: white;
   max-width: 100vw;
   font-size: 20px;
@@ -138,7 +199,7 @@ const Footer = styled.h3`
 `
 
 // markup
-const IndexPage = () => {
+const Projects = () => {
     return (
     <div style={{height:'100%', width:'100%'}}>
         <style jsx global>{`
@@ -148,31 +209,46 @@ const IndexPage = () => {
           }
         `}</style>
 
+
+
+        <Center>
+
         <StyledDiv>
+
+        <StyledTitle>
+              Projects
+            </StyledTitle>
+            
             <ResponsiveDiv>
+
+  
+
+
                 <StyledHeading1>
-                    ADVOCATE
+
+                  <StyledImage loading="lazy"  src="/static/aidvocatar.jpg"></StyledImage>
+                    {/* Projects
                     <br/>
                     EXPERIMENTAL
                     <br/>
-                    LABS
+                    LABS */}
                 </StyledHeading1>
 
                 <div style={{width: 100}}/>
 
                 <div>
                     <StyledParagraph>
-                        We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
+                        <b>AIdvocatAR</b>
+                    </StyledParagraph>
+                    <StyledParagraph>
+                        Mira Yu
                     </StyledParagraph>
                     <br></br>
 
-                    <StyledLink href="/projects">
-                        See our projects here.
-                    </StyledLink>
-
-                    <StyledParagraph>
-                        {/* More info coming soon. Contact us at labs@theharvardadvocate.com. */}
-                    </StyledParagraph>
+                    <StyledParagraph2>
+                   Uses decentralized machine learning and augmented reality to transform published pieces from <i>The Harvard Advocate</i> into dynamic 3D models for an immersive reading experience.
+                    &nbsp;<StyledLink href="https://apps.apple.com/us/app/aidvocatar/id6480157418">Download here.</StyledLink>
+                    </StyledParagraph2>
 
                     {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
                         START A PROJECT
@@ -183,10 +259,11 @@ const IndexPage = () => {
                           Apply Here.
                       </StyledLink>
                       <div style={{padding: "10px"}}/> */}
-                      <StyledLink href="mailto:labs@theharvardadvocate.com">
-                        {/* Email us. */}
-                    </StyledLink>
 
+
+                      {/* <StyledLink href="mailto:labs@theharvardadvocate.com">
+                        GitHub.
+                    </StyledLink> */}
                     </div>
 
 
@@ -196,8 +273,16 @@ const IndexPage = () => {
                 </div>
 
             </ResponsiveDiv>
-            <Footer>21 SOUTH ST CAMBRIDGE, MA 02138 | COPYRIGHT © THE HARVARD ADVOCATE 2022</Footer>
+
+            <Footer>Return <StyledLink href="/">home</StyledLink>.</Footer>
+
+
+            
         </StyledDiv>
+
+
+
+        </Center>
 
         <StyledVideo preload="auto" autoPlay autoplay muted loop>
             <source src={gradient1} type="video/mp4"/>
@@ -207,4 +292,4 @@ const IndexPage = () => {
     )
 }
 
-export default IndexPage
+export default Projects
