@@ -7,8 +7,6 @@ import "@fontsource/inter/200.css"
 import "@fontsource/ibm-plex-mono"
 import gradient1 from '../images/gradient.mp4'
 
-
-
 const Center = styled.div`
   // align-items: center;
   // justify-content: center;

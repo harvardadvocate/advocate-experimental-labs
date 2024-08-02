@@ -6,6 +6,7 @@ import "@fontsource/inter/400.css"
 import "@fontsource/inter/200.css"
 import "@fontsource/ibm-plex-mono"
 import gradient1 from '../images/gradient.mp4'
+import { Link } from "gatsby";
 
 const StyledDiv = styled.div`
   position: absolute;
@@ -178,9 +179,11 @@ const IndexPage = () => {
                           Apply Here.
                       </StyledLink>
                       <div style={{padding: "10px"}}/> */}
-                      <StyledLink href="mailto:labs@theharvardadvocate.com">
+                      <StyledLink href="/projects">
                         Email us.
                     </StyledLink>
+
+                    <Link to="/projects">test</Link>
                     </div>
 
 
