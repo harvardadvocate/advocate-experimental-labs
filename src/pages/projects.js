@@ -6,6 +6,7 @@ import "@fontsource/inter/400.css"
 import "@fontsource/inter/200.css"
 import "@fontsource/ibm-plex-mono"
 import gradient1 from '../images/gradient.mp4'
+import { Link } from 'gatsby'
 
 const Center = styled.div`
   // align-items: center;
@@ -130,6 +131,34 @@ const StyledVideo = styled.video`
   margin: 0;
 
 `
+
+
+const StyledGatsbyLink = styled(props => <Link {...props} />)`
+  //padding: 10px;
+  //padding-left: 30px;
+  //padding-right: 30px;
+  background-color: transparent;
+  //border: 2px white solid;
+  border-radius: 500px;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: inter;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #FFEA7C;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 18px;
+   }
+  `
 
 const StyledLink = styled.a`
   //padding: 10px;
@@ -272,7 +301,7 @@ const Projects = () => {
 
             </ResponsiveDiv>
 
-            <Footer>Return <StyledLink href="/">home</StyledLink>.</Footer>
+            <Footer>Return <StyledGatsbyLink href="/">home</StyledGatsbyLink>.</Footer>
 
 
             

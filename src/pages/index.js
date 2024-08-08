@@ -76,6 +76,35 @@ const StyledVideo = styled.video`
 
 `
 
+const StyledGatsbyLink = styled(props => <Link {...props} />)`
+  //padding: 10px;
+  //padding-left: 30px;
+  //padding-right: 30px;
+  background-color: transparent;
+  //border: 2px white solid;
+  border-radius: 500px;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: inter;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #FFEA7C;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 18px;
+   }
+  `
+
+// ...
+
 const StyledLink = styled.a`
   //padding: 10px;
   //padding-left: 30px;
@@ -166,9 +195,9 @@ const IndexPage = () => {
                         We’re a new creative labs founded at The Harvard Advocate, and we’re looking for collaborators.
                     </StyledParagraph>
 
-                    <StyledParagraph>
-                        More info coming soon. Contact us at labs@theharvardadvocate.com.
-                    </StyledParagraph>
+                      {/* <StyledParagraph>
+                          More info coming soon. Contact us at labs@theharvardadvocate.com.
+                      </StyledParagraph> */}
 
                     {/* <StyledLink href="https://forms.gle/VC3EKCJmdcX5tofs5" target="_blank" rel="noreferrer noopener">
                         START A PROJECT
@@ -179,11 +208,8 @@ const IndexPage = () => {
                           Apply Here.
                       </StyledLink>
                       <div style={{padding: "10px"}}/> */}
-                      <StyledLink href="/projects">
-                        Email us.
-                    </StyledLink>
-
-                    <Link to="/projects">test</Link>
+                      
+                    <StyledGatsbyLink to="/projects">See our projects here.</StyledGatsbyLink>
                     </div>
 
 
