@@ -6,6 +6,8 @@ import "@fontsource/inter/400.css"
 import "@fontsource/inter/200.css"
 import "@fontsource/ibm-plex-mono"
 import gradient1 from '../images/gradient.mp4'
+import aidvocatar from '../images/aidvocatar.jpg'
+
 import { Link } from 'gatsby'
 
 const Center = styled.div`
@@ -253,7 +255,7 @@ const Projects = () => {
 
                 <StyledHeading1>
 
-                  <StyledImage loading="lazy"  src="/static/aidvocatar.jpg"></StyledImage>
+                  <StyledImage loading="lazy"  src={aidvocatar}></StyledImage>
                     {/* Projects
                     <br/>
                     EXPERIMENTAL
